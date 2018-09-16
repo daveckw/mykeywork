@@ -1,0 +1,14 @@
+<div class="center jumbotron">
+  <h1>Welcome to Mykey Work</h1>
+
+  <h2>
+
+  </h2>
+  <% if logged_in? %>
+    <%= link_to "Start", root_path, class: "btn btn-lg btn-info" %>
+  <% else %>
+    <%= link_to "Sign up now!", new_user_path, class: "btn btn-lg btn-info" %>
+    <%= link_to "Sign in!", login_path, class: "btn btn-lg btn-success" %>
+  <% end %>
+
+  </div>
